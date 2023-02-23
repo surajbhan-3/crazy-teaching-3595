@@ -30,6 +30,7 @@ body{
    .navbar input{
     width: 100%;
     height: max(30px);
+    height: 50%;
    }
    
 
@@ -86,7 +87,7 @@ body{
     justify-content: space-between;
     border: 1px solid red;
     width: 90%;
-    height: 49%;
+ 
     margin: auto;
     margin-top: 25px;
 
@@ -98,12 +99,15 @@ body{
   
       border: 1px solid black;
       width: 70%;
+      object-fit:cover  ;
 }
 .top-section-divs> .static-div{
 
   
     border: 1px solid black;
     width: 28%;
+   object-fit: cover;
+   
 }
 
 .offers-div{
