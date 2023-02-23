@@ -1,0 +1,14 @@
+.container{
+    display: flex;
+    border: 1px solid green;
+    
+}
+.div-1{
+    width: 40%;
+    border: 1px solid black;
+    
+}
+.div-2{
+    width: 40%;
+    border: 1px solid chartreuse;
+}
