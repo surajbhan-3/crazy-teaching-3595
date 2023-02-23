@@ -1,3 +1,9 @@
+ .navbar{
+     
+    border: 1px solid green;
+    margin-bottom: 20px;
+ }
+
 .container{
     display: flex;
     border: 1px solid green;
