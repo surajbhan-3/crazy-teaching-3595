@@ -1,0 +1,48 @@
+.all-items{
+    /* border: 1px solid red; */
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.all-items ul{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: auto;
+    padding: auto;
+    flex-wrap: wrap;
+
+}
+.all-items ul li{
+
+ list-style: none;
+ margin: 15px;
+
+
+}
+.underline{
+    /* display: none; */
+   /* text-decoration: none; */
+   text-decoration: none;
+   /* text-decoration-color: orange;
+   text-decoration-thickness: 2px; */
+
+}
+
+.underline:hover{
+    color: darkorange;
+    text-decoration: underline;
+    text-decoration-color: orange;
+    text-decoration-thickness: 2px;
+}
+
+/* .sofa-items:hover > ul .underline{
+    text-decoration: underline;
+    text-decoration-color: orange;
+    text-decoration-thickness: 2px;
+
+}
+.sofa-items:hover{
+    color: red;
+} */

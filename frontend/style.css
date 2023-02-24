@@ -466,6 +466,7 @@ footer>.div-1{
      height: auto;
      width: 90%;
      margin: auto;
+     flex-wrap: wrap;
 
 }
 footer>.div-1>div{
@@ -497,6 +498,7 @@ footer>.div-1>.div-13>ul li{
     height: auto;
     margin: auto;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 .div-2>div{
     width: 32%;
@@ -522,7 +524,7 @@ footer>.div-1>.div-13>ul li{
     width: 49%;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 
 }
 .we-accept>div{
@@ -542,6 +544,14 @@ footer>.div-1>.div-13>ul li{
 }
 
 @media all and (min-width: 300px) and (max-width: 700px) {
+
+    .navbar> .first_navbar{
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+    }
+  
+
     .decor-items{
         
         flex-direction: column;
@@ -571,6 +581,43 @@ footer>.div-1>.div-13>ul li{
 
 }
   
+.we-accept{
+   flex-direction: column;
+   flex-wrap: wrap;
+   width: 70%;
+   /* padding-left: 50px; */
+
+}
+.last-section{
+    margin: 30px;
+}
+
+.we-accept>div{
+  
+    width: 30%;
+ 
+ }
+
+ .follow-us>ul{
+   flex-direction: column;
+   
+
+
+}
+.follow-us>ul li{ 
+ padding: 15px;
+ 
+ }
+ /* .div-1{
+    flex-direction: column;
+    width: 100%;
+ }
+ .div-1>div ul{
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+ } */
+
 
 
   }
