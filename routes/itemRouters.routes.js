@@ -1,14 +1,17 @@
 const express=require('express')
 const {ItemModel}=require("../model/items.model")
-
+const cors=require("cors")
 const bcrypt=require("bcrypt")
 const itemRouter=express.Router()
+const app=express()
+app.use(cors)
 
 
-itemRouter.get("/item/furniture",async(req,res)=>{
+itemRouter.get("/furniture",async(req,res)=>{
+            console.log("hello")
 
        try {
-          const allitem= await ItemModel.find({userID:req.body.userID})
+          const allitem= await ItemModel.find({category:"furniture"})
           res.send(allitem)
        } catch (error) {
         res.send(error)
