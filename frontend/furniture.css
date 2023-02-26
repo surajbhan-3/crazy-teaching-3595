@@ -46,3 +46,131 @@
 .sofa-items:hover{
     color: red;
 } */
+
+
+.furniture-data{
+
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+
+}
+#div1 {
+    width: 20%;
+    height: auto;
+    background-color:whitesmoke;
+    position: sticky;
+    top: 10px;
+    left: 10px;
+    padding: 20px;
+  
+
+}
+
+#div1 p {
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+        'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* color: red; */
+}
+
+#div1 select {
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 16px;
+   
+}
+
+#div1 h1 {
+    font-size: 6.0rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#div2 {
+   
+    width: 80%;
+    margin-top: 0px;
+    /* border: 1px solid rebeccapurple; */
+
+
+}
+
+
+.furniture-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    
+
+}
+.items-by-brand{
+
+    overflow: scroll;
+    height: 220px;
+    color:black;
+
+    
+}
+
+ .items-by-brand:hover{
+    overflow-y: auto;
+   border: 0.1px solid whitesmoke;
+
+    
+}
+
+
+
+.items-by-material{
+
+    overflow: scroll;
+    height: 220px;
+    color:black;
+
+    
+}
+
+ .items-by-material:hover{
+    overflow-y: auto;
+   border: 0.1px solid whitesmoke;
+
+    
+}
+
+
+
+  
+
+
+
+
+  
+
+
+
+@media all and (min-width: 300px) and (max-width: 700px) {
+
+    .furniture-container{
+        
+        grid-template-columns: repeat(2,1fr);
+    }
+
+
+    .furniture-data{
+        flex-direction: column;
+    }
+    #div{
+        flex-direction: column;
+        height: 100px;
+        width: 100%;
+        position: relative;
+        z-index: -1;
+
+    }
+
+
+}
+

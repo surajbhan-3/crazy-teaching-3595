@@ -50,7 +50,7 @@ body{
     background-color: white;
     padding: 8px 20px 8px 20px;
     border-radius:123px;
-    border: 2.5px solid rgb(49, 49, 49);
+    /* border: 2.5px solid rgb(49, 49, 49); */
     font-weight: 700;
     font-size: 16px;
     margin: 10px;
@@ -58,7 +58,7 @@ body{
   }
   .navbar>.first_navbar>#ul3 #help:hover,#sign:hover,#heart:hover,#cart:hover{
 
-   background-color: rgb(156, 231, 106);
+   background-color: orange;
    
 
   }
@@ -230,7 +230,7 @@ list-style: none;
 
     display: flex;
     justify-content: space-between;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 90%;
  
     margin: auto;
@@ -242,7 +242,7 @@ list-style: none;
 .top-section-divs> .slider-div{
 
   
-      border: 1px solid black;
+      /* border: 1px solid black; */
       width: 70%;
       object-fit:cover;
     
@@ -255,7 +255,7 @@ list-style: none;
 .top-section-divs> .static-div{
 
   
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 28%;
    object-fit: cover;
    
@@ -263,7 +263,7 @@ list-style: none;
 
 .offers-div{
 
-    border: 2px solid red;
+    /* border: 2px solid red; */
     /* height: max(100px); */
     max-height: 100px;
     width: 90%;
@@ -280,7 +280,7 @@ list-style: none;
 
       display: flex;
       justify-content: space-between;
-      border: 1px solid salmon;
+      /* border: 1px solid salmon; */
       width: 90%;
       margin: auto;
       margin-bottom: 10px;
@@ -290,7 +290,7 @@ list-style: none;
 .shop-by-room>div{
 
     width: 24%;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 .shop-by-room button{
@@ -312,7 +312,7 @@ list-style: none;
 
       display: flex;
       justify-content: space-between;
-      border: 1px solid salmon;
+      /* border: 1px solid salmon; */
       width: 90%;
       margin: auto;
      
@@ -323,7 +323,7 @@ list-style: none;
 
 .fry-deals>div{
     width: 24%;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 /* *trends in furniture */
@@ -335,7 +335,7 @@ list-style: none;
 
     display: flex;
     justify-content: space-between;
-    border: 1px solid salmon;
+    /* border: 1px solid salmon; */
     width: 90%;
     margin: auto;
    
@@ -344,7 +344,7 @@ list-style: none;
 }
 .trends-in>div{
       width: 32%;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 /* * new arrivals */
@@ -357,7 +357,7 @@ list-style: none;
 
     display: flex;
     justify-content: space-between;
-    border: 1px solid salmon;
+    /* border: 1px solid salmon; */
     width: 90%;
     margin: auto;
   
@@ -366,7 +366,7 @@ list-style: none;
 }
 .new-arrivals>div{
       width: 24%;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 /* * get spring ready*/
@@ -377,7 +377,7 @@ list-style: none;
 
     display: flex;
     justify-content: space-between;
-    border: 1px solid salmon;
+    /* border: 1px solid salmon; */
     width: 90%;
     margin: auto;
  
@@ -386,7 +386,7 @@ list-style: none;
 }
 .spring-ready>div{
       width: 33%;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 /* *top brands on design and decor */
@@ -397,7 +397,7 @@ list-style: none;
 
     display: flex;
     justify-content: space-between;
-    border: 1px solid salmon;
+    /* border: 1px solid salmon; */
     width: 90%;
     margin: auto;
 
@@ -406,7 +406,7 @@ list-style: none;
 }
 .brands-on-design_decor>div{
       width: 24%;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 
@@ -418,7 +418,7 @@ list-style: none;
 
     display: flex;
     justify-content: space-between;
-    border: 1px solid salmon;
+    /* border: 1px solid salmon; */
     width: 90%;
     margin: auto;
    
@@ -427,7 +427,7 @@ list-style: none;
 }
 .customer-speaks>div{
       width: 33%;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 
@@ -440,7 +440,7 @@ list-style: none;
 
     display: flex;
     justify-content: space-between;
-    border: 1px solid salmon;
+    /* border: 1px solid salmon; */
     width: 90%;
     margin: auto;
    
@@ -449,7 +449,7 @@ list-style: none;
 }
 .recommended-for>div{
       width: 16%;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 /* *footer section */
@@ -460,7 +460,7 @@ footer{
 
 footer>.div-1{
 
-     border: 1px solid red;
+     /* border: 1px solid red; */
      display: flex;
      justify-content: space-between;
      height: auto;
@@ -472,7 +472,7 @@ footer>.div-1{
 footer>.div-1>div{
 
     width: 24%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-top: 5%;
 }
 footer>.div-1>.div-11>ul li{
@@ -491,7 +491,7 @@ footer>.div-1>.div-13>ul li{
 
 .div-2{
 
-    border: 1px solid green;
+    /* border: 1px solid green; */
     display: flex;
     justify-content: space-between;
     width: 90%;
@@ -520,7 +520,7 @@ footer>.div-1>.div-13>ul li{
 }
 
 .we-accept{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 49%;
     display: flex;
     justify-content: space-between;
@@ -532,7 +532,7 @@ footer>.div-1>.div-13>ul li{
     margin-top: 20px;
 }
 .follow-us{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 49%;
 }
 .follow-us>ul{
@@ -594,7 +594,7 @@ footer>.div-1>.div-13>ul li{
 
 .we-accept>div{
   
-    width: 30%;
+    width: 40%;
  
  }
 
@@ -606,18 +606,88 @@ footer>.div-1>.div-13>ul li{
 }
 .follow-us>ul li{ 
  padding: 15px;
- 
+ width: 90%;
  }
- /* .div-1{
+
+ .trends-in{
+
     flex-direction: column;
     width: 100%;
- }
- .div-1>div ul{
+}
+.trends-in>div{
+
     flex-direction: column;
+    width: 90%;
+}
+
+.new-arrivals{
+
+    flex-direction: column;
+
+}
+.new-arrivals>div{
     width: 100%;
-    flex-wrap: wrap;
- } */
+
+}
+
+.spring-ready{
+
+    flex-direction: column;
+
+}
+
+.spring-ready>div{
+width: 90%;
 
 
+}
+
+.brands-on-design_decor{
+  flex-direction: column;
+
+}
+.brands-on-design_decor>div{
+  width: 90%;
+
+  
+  }
+
+.customer-speaks{
+   flex-direction: column;
+}
+
+.customer-speaks>div{
+    width: 90%;
+ }
+
+ .recommended-for{
+flex-direction: column;
+}
+
+.recommended-for>div{
+    width: 90%;
+    }
+
+    footer>.div-1{
+
+        /* border: 1px solid red; */
+       flex-direction: column;
+   }
+
+   footer>.div-1>div{
+
+    width: 90%;
+}
+
+footer>.div-2{
+
+    /* border: 1px solid red; */
+   flex-direction: column;
+}
+
+footer>.div-2>div{
+
+         width: 90%;
 
   }
+}

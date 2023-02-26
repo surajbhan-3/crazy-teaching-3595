@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
+ 
   <title>furniture-page</title>
   <link rel="stylesheet" href="furniture.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -35,7 +36,7 @@
                 alt=""></a></li>
         </ul>
         <ul id="ul2">
-          <li><a href="#"><input type="search" placeholder="Search..." name="" id=""></a></li>
+          <li><input oninput="s()" type="search" placeholder="Search..." name="" id="fin"></li>
         </ul>
         <ul id="ul3">
 
@@ -51,6 +52,7 @@
                 
       <!--# </div> -->
     </div>
+    
     <!-- * nav bar ends  decor items starts -->
     <div class="decor-items">
       <div class="furniture"> <u class="furniture-underline"> furniture</u>
@@ -553,7 +555,7 @@
       <div class="modular"><u class="modular-underline">Modular</u></div>
       <div class="gifts"><u class="gifts-underline">Gifts</u></div>
     </div>
-
+<hr>
 
   
 
@@ -561,7 +563,7 @@
 
       <div class="all-items">
              <ul>
-                <li sofa-items> <u class="underline"> Sofa </u></li>
+                <li  class="sofa-items"> <u class="underline"> Sofa </u></li>
                 <li recliners-items><u class="underline">Recliners</u></li>
                 <li chairs-items><u class="underline">Chairs</u></li>
                   <li center-table><u class="underline">Centre Tables</u></li>
@@ -571,7 +573,75 @@
       </div>
 
   
+ <hr>
+      <div id="item-heading">
+        <h3>Furnitures
+          <span>Shop All</span>
+        </h3>
+      </div>
+    
+    
+    
+    
+    
+      <div class="furniture-data">
+        <div id="div1">
+          <p>Sort product by their category</p>
+          <select name="subCategory" class="subfilter" id="filte">
+            <option value="all">All</option>
+            <option value="sofa">Sofa</option>
+            <option value="Recliner">Recliner</option>
+            <option value="Table">Table</option>
+            <option value="Chair">Chair</option>
+            <option value="Dining-tables">Dinning Tables</option>
+            <option value="beds">Beds</option>
+          </select>
+          <br/>
+          <h3>Brands</h3>
+               <div class="items-by-brand" >
+                 
+                 <ul>
+                  
+                  <li class="CasaCraft"> <p>CasaCraft</p> </li>
+                  <li class="Vittoria"> <p>Vittoria</p> </li>
+                  <li class="Woodsworth"> <p>Woodsworth</p></li> 
+                  <li class="ESTRE"> <p>ESTRE</p> </li>
+                  <li class="Durian"> <p>Durian</p> </li>
+                  <li class="home"> <p>@home</p> </li>
+                  <li class="Sleepyhead"> <p>Sleepyhead</p></li> 
+                  <li class="Star-India"> <p>Star India</p></li>
+                  </ul>
+               </div>
+      
 
+             <br>
+          <p> Aarrange product by their price</p>
+          <select name="sorting" id="sort">
+            <option value="">Sorting</option>
+            <option value="LTH">Lower-higher</option>
+            <option value="HTL">Higher-lower</option>
+          </select>
+         
+        </div>
+        <div id="div2">
+          <div class="furniture-container">
+    
+            <!-- furniture data appends here -->
+        
+          </div>
+          <div class="furniture-container2">
+      
+            <!-- furniture data appends here -->
+          
+        
+      
+          </div>
+        </div>
+       
+    
+       
+      </div>
+    
 
  
    
@@ -695,10 +765,13 @@
 
     </footer>
 
+
+
+
   </body>
 
   </html>
+  <script src="./furniture.js" type="text/javascript"></script>
 
 </body>
-
 </html>
