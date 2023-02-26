@@ -16,7 +16,7 @@ console.log("hello")
      console.log(err)
 })
 
-
+let cartData=[]
 
 function displayData(data){
      let furnitureData=document.querySelector(".furniture-container")
@@ -50,7 +50,34 @@ function displayData(data){
            buynow.style.border="none"
 
            buynow.style.backgroundColor="white"
+            
+             buynow.addEventListener("click", ()=>{
+                cartData = JSON.parse(localStorage.getItem("Addtocart"))||[] ;
 
+            let datapresent = false;
+            for (let i = 0; i < cartData.length; i++) {
+
+                if (cartData[i]._id == el._id) {
+                    datapresent = true;
+                    break;
+                }
+            }
+
+            console.log(datapresent)
+            if (datapresent == true) {
+                alert("Product Already in Cart❌");
+
+            } else {
+                cartData.push({ ...el, quantity: 1 });
+                localStorage.setItem("Addtocart", JSON.stringify(cartData));
+                alert("Product Added To Cart ✔");
+
+            }
+             
+          
+          
+          
+          })
 
 
           div.append(image,names,brand,price,buynow)
