@@ -23,7 +23,7 @@ function displayData(data){
    console.log(data)
       data.forEach((el)=>{
 
-
+          //  console.log(el.details[0].Primarymaterial)
           let div = document.createElement("div")
  
           let image = document.createElement("img")
@@ -87,6 +87,8 @@ function displayData(data){
       
       })
 }
+
+
  
  
         
