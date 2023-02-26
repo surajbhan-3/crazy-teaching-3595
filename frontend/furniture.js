@@ -219,3 +219,49 @@ document.querySelector(".Star-India").addEventListener("click",()=>{
 
 
 // sorting
+
+let sorting = document.querySelector("#sort");
+
+sorting.addEventListener("change", function (event) {
+
+    let val = document.querySelector("#sort").value;
+    //console.log(val)
+
+    if (val == "LTH") {
+        let data1 = allData[0].sort(function (a, b) {
+            return a.Price - b.Price;
+
+        })
+       
+        displayData(data1)
+
+        
+
+
+    } else if (val == "HTL") {
+        let sorteddata = allData[0].sort(function (a, b) {
+            return b.Price - a.Price;
+
+        })
+        displayData(sorteddata)
+    
+
+    } else {
+        displayData(allData[0])
+     
+        
+    }
+})
+
+function search() {
+    console.log("hleo")
+    let q = document.querySelector("#fin").value;
+    console.log(q)
+   
+    let newData = allData[0].filter(function (el) {
+        return el.name.toLowerCase().includes(q.toLowerCase());
+    });
+
+   // console.log(newData)
+    displayData(newData);
+}
