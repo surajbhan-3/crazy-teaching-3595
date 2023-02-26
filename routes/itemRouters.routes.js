@@ -19,6 +19,11 @@ itemRouter.get("/furniture",async(req,res)=>{
 })
 
 
+
+
+
+
+
 itemRouter.get("/item/home-deceor",async(req,res)=>{
 
     try {
@@ -66,19 +71,30 @@ itemRouter.post("/add",async(req,res)=>{
      }
 })
 
+//  itemRouter.patch("/update",async(req,res)=>{
+//      const payload=req.body
+//      const addData=await ItemModel.updateMany({price:"₹ 9,999"})
+//      res.send(addData)
+//  })
+
+//  db.users.updateMany({gender:"Female"},{$push:{scholarship:true}})
+
+
 
 
 itemRouter.patch("/update/:id",async(req,res)=>{
     const payload=req.body
     const id=req.params.id
-    const post= PostModel.findOne({"_id":id})
+    const post= ItemModel.findOne({"_id":id})
     const userID_in_post=post.userID
     const userID_in_making_req=req.body.userID
     try {
          if(userID_in_making_req!==userID_in_post){
             res.send("unathoriesed")
          }else{
-            await PostModel.findByIdAndUpdate({"_id":id})
+            const payload=req.body
+           const datau= await ItemModel.findByIdAndUpdate({"_id":id},payload)
+            console.log(datau)
             res.send("updated")
          }
         
