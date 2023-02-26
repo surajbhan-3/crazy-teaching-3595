@@ -1,4 +1,4 @@
-console.log("hello") 
+let allData=[]
  fetch("https://dull-belt-colt.cyclic.app/items/furniture",{
     method:"GET",
     headers:{
@@ -12,18 +12,21 @@ console.log("hello")
 }).then((data)=>{
      console.log(data)
      displayData(data)
+     allData.push(data);
+     // search(data)
 }).catch((err)=>{
      console.log(err)
 })
-
+//console.log(allData)
 let cartData=[]
+
 
 function displayData(data){
      let furnitureData=document.querySelector(".furniture-container")
-   console.log(data)
+     furnitureData.innerHTML=null
       data.forEach((el)=>{
 
-          //  console.log(el.details[0].Primarymaterial)
+     //  console.log(el.subCategory)
           let div = document.createElement("div")
  
           let image = document.createElement("img")
@@ -39,8 +42,6 @@ function displayData(data){
           let price = document.createElement("p")
           price.textContent =  el.price
   
-          // let desc = document.createElement("p")
-          // desc.textContent = el.info
   
           let buynow = document.createElement("button")
           buynow.textContent = "Add To Cart"
@@ -89,6 +90,132 @@ function displayData(data){
 }
 
 
- 
- 
-        
+// * filter
+
+ let p = document.querySelector("#filte");
+
+p.addEventListener("change", function (event) {
+    event.preventDefault();
+     let selected = event.target.value;
+    if (selected == "all") {
+        displayData(allData[0])
+   
+    }
+    else {
+
+        let filtered_data = allData[0].filter(function (el) {
+            return el.subCategory == selected
+        });
+        displayData(filtered_data)
+     
+    }
+
+});
+
+
+//  select by brands
+
+document.querySelector(".CasaCraft").addEventListener("click",()=>{
+    console.log('helo')
+
+       let selected="CasaCraft"
+       console.log(selected)
+       let filtered_data = allData[0].filter(function (el) {
+        return el.brand == selected
+    });
+    displayData(filtered_data)
+})
+
+document.querySelector(".Vittoria").addEventListener("click",()=>{
+    console.log('helo')
+
+       let selected="Vittoria"
+       console.log(selected)
+       let filtered_data = allData[0].filter(function (el) {
+        return el.brand == selected
+    });
+    displayData(filtered_data)
+})
+
+document.querySelector(".Vittoria").addEventListener("click",()=>{
+    console.log('helo')
+
+       let selected="Vittoria"
+       console.log(selected)
+       let filtered_data = allData[0].filter(function (el) {
+        return el.brand == selected
+    });
+    displayData(filtered_data)
+})
+
+
+document.querySelector(".Woodsworth").addEventListener("click",()=>{
+    console.log('helo')
+
+       let selected=" Woodsworth"
+       console.log(selected)
+       let filtered_data = allData[0].filter(function (el) {
+        return el.brand == selected
+    });
+    displayData(filtered_data)
+})
+
+document.querySelector(".ESTRE").addEventListener("click",()=>{
+    console.log('helo')
+
+       let selected="ESTRE"
+       console.log(selected)
+       let filtered_data = allData[0].filter(function (el) {
+        return el.brand == selected
+    });
+    displayData(filtered_data)
+})
+
+document.querySelector(".Durian").addEventListener("click",()=>{
+    console.log('helo')
+
+       let selected="Durian"
+       console.log(selected)
+       let filtered_data = allData[0].filter(function (el) {
+        return el.brand == selected
+    });
+    displayData(filtered_data)
+})
+
+
+document.querySelector(".home").addEventListener("click",()=>{
+    console.log('helo')
+
+       let selected="@home"
+       console.log(selected)
+       let filtered_data = allData[0].filter(function (el) {
+        return el.brand == selected
+    });
+    displayData(filtered_data)
+})
+
+document.querySelector(".Sleepyhead").addEventListener("click",()=>{
+    console.log('helo')
+
+       let selected="Sleepyhead"
+       console.log(selected)
+       let filtered_data = allData[0].filter(function (el) {
+        return el.brand == selected
+    });
+    displayData(filtered_data)
+})
+
+
+document.querySelector(".Star-India").addEventListener("click",()=>{
+    console.log('helo')
+
+       let selected="Star India"
+       console.log(selected)
+       let filtered_data = allData[0].filter(function (el) {
+        return el.brand == selected
+    });
+    displayData(filtered_data)
+})
+
+
+// sorting
