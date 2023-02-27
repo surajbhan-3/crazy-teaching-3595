@@ -1,5 +1,5 @@
 const express=require('express')
-//const {UserModel}=require("../model/Users.model")
+const {UserModel}=require("../model/UserModel")
 const jwt=require("jsonwebtoken")
 const bcrypt=require("bcrypt")
 const userRouter=express.Router()
@@ -8,7 +8,7 @@ const userRouter=express.Router()
 
 
 userRouter.post("/register",async(req,res)=>{
-    const { name,email,gender, password,age,city} = req.body;
+    const { name,email,password} = req.body;
     console.log(email)
 
   const findemail= await UserModel.find({"email":email})
@@ -23,7 +23,7 @@ userRouter.post("/register",async(req,res)=>{
              if(err){
                 res.send({"msg":"something gone wrong",err:err.message})
              }else{
-                const user= new UserModel({name,email,gender, password:hash,age,city})
+                const user= new UserModel({name,email,password:hash})
                 await user.save()
                 res.send("User has been registered")
              }

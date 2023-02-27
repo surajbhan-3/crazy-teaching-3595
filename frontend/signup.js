@@ -12,6 +12,7 @@ form.addEventListener("submit",(e)=>{
         password:form.password.value,
        
       }
+      console.log(payload)
  
 
       fetch("https://dull-belt-colt.cyclic.app/users/register",{
