@@ -171,6 +171,20 @@
 
     }
 
+    #div1{
+        width: 90%;
+        height: auto;
+        background-color: whitesmoke;
+        position: relative;
+        top: 10px;
+        left: 10px;
+        z-index: -1;
+        padding: 20px;
+    }
+    #div2{
+
+        margin-left: 5%;
+    }
 
 }
 

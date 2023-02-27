@@ -6,7 +6,7 @@ form.addEventListener("submit",(e)=>{
       let payload={
 
         email:form.email.value,
-        pass:form.pass.value,
+        password:form.password.value,
        
       }
  

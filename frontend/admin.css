@@ -7,20 +7,20 @@ body{
 
 .navbar{
 
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
 }
 .navbar >div{
 
     width: 90%;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     margin: auto;
     text-align: center;
     font-size: 30px;
     
 }
 main{
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: 90%;
     margin: auto;
     display: flex;
@@ -32,6 +32,6 @@ main{
 }
 main>div{
     width: 30%;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     
 }
