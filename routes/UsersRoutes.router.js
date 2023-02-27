@@ -15,7 +15,7 @@ userRouter.post("/register",async(req,res)=>{
   console.log(findemail)
    if(findemail.length>0){
      
-      res.send("User already exist please login")
+      res.send({"msg":"User already exist please login"})
    }else{
       
        try {
